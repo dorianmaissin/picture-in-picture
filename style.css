@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image:url(jun-ohashi-O71npBgVnsI-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    position: relative;
+}
+
+body::before{
+    content: "";
+    background-color: rgba(0, 0, 0, 0.396);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+h1{
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-bottom: 25px;
+}
+
+h2{
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+button{
+    text-transform: uppercase;
+    background-color: transparent;
+    padding: 10px 35px;
+    border: 1px solid white;
+    border-radius: 3px;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 300;
+    cursor: pointer;
+}
+
