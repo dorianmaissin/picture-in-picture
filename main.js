@@ -1,5 +1,6 @@
 const video = document.querySelector("#video")
 const shareScreeenBtn = document.querySelector("#shareBtn");
+const selectBtn = document.querySelector("#selectBtn")
 
 async function mediaSource() {
     try{
@@ -12,7 +13,7 @@ async function mediaSource() {
 }
 
 
-mediaSource()
+selectBtn.addEventListener('click', mediaSource)
 
 
 shareScreeenBtn.addEventListener('click', async() => {
